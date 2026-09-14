@@ -1,0 +1,10 @@
+# 临时工作文件（评审/提交/调试脚本）
+_*.py
+_*.md
+_*.txt
+__pycache__/
+*.pyc
+
+# 系统文件
+Thumbs.db
+.DS_Store

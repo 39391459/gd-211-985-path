@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="w5UXaJJOCoBaIQucNXoLBD">
+<head data-page-node-id="rhLIzlDaLmA02szk9TTLyz">
+  <meta charset="UTF-8" data-page-node-id="nJeNhexDwsHpBa28qdSYnZ" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="DcS3wKoVJAPGi0NAs6r1RE" />
+  <title>广东高一 · 211/985 升学路径规划</title>
+  <link rel="stylesheet" href="assets/styles.css" data-page-node-id="628YAHFhvMPy7B3ZrNc6kd" />
+</head>
+<body data-page-node-id="14nz80GHXGwLTc3HkPDc5R">
+  <header class="site-header" data-page-node-id="u7uLmUB2LtvgzE0gfsRPAS">
+    <div class="wrap" data-page-node-id="jB04jCaNNHqcvwXEHD9yPu">
+      <div class="brand" data-page-node-id="8B0foexXN6papCk4Yq5tWd">
+        <span class="logo" data-page-node-id="7jJhjq7nIQyCbYIyzlh5XX">粤</span>
+        <div data-page-node-id="DcTfCRWVCVkqiaJQ8H0QWu">
+          <h1 data-page-node-id="fzrFXKd2j4i9VQvh1LUFXu">广东高一 · 211/985 升学路径规划</h1>
+          <p class="subtitle" data-page-node-id="2wwAudKcSeYC1lYlA9TIyn">选科 → 排名 → 目标 → 路径，帮你连续用三年的升学规划工具</p>
+        </div>
+      </div>
+      <nav class="tabs" id="tabs" data-page-node-id="lPgAPPGhH3ctKA0YFkcAjo">
+        <button class="tab active" data-tab="overview" data-page-node-id="GptiUlZehEKSNJ4QgFcHRN">概览</button>
+        <button class="tab" data-tab="trend">战略趋势</button>
+        <button class="tab" data-tab="select" data-page-node-id="hbZ7m1OdG0DvmbgkkEX30U">选科决策</button>
+        <button class="tab" data-tab="branches" data-page-node-id="c5aHlI1ni4e4ExqO5SDOoL">未来支线</button>
+        <button class="tab" data-tab="paths">升学路径</button>
+        <button class="tab" data-tab="grades" data-page-node-id="qcNJPIOrhBOiWgNiwFbaKf">高中三年</button>
+        <button class="tab" data-tab="target">我的目标</button>
+        <button class="tab" data-tab="rank">我的排名</button>
+        <button class="tab" data-tab="check" data-page-node-id="2QTYggN798mgPQtnKl7VGu">检验复盘</button>
+        <button class="tab" data-tab="paper" data-page-node-id="KNX0Myk4EwYU2C8AR8qSFL">无电子产品</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" data-page-node-id="TC2VWXIZpaZsLgYlC8IcgC">
+
+    <!-- ============ 概览 ============ -->
+    <section class="panel active" id="overview" data-page-node-id="KsFUBoNj9dfG0mKeQROObv">
+      <div class="hero" id="hero" data-page-node-id="0s5wY4Cv2L6CKa6iXNxPCA"></div>
+      <div class="facts" id="facts" data-page-node-id="CJjm6qqA7ypRGaDsBwFr5I"></div>
+      <div class="loop" id="loop" data-page-node-id="YiZMKQtcaeSInCgWbUHRhu"></div>
+      <div id="levels"></div>
+      <p class="disclaimer" data-page-node-id="NfR2mYJH30u7I9b4EQ2lky">⚠️ 录取率、分数线、位次为公开数据+估算，存在口径差异；正式以广东省教育考试院、阳光高考平台当年官方公布为准。</p>
+      <div id="noQuant"></div>
+    </section>
+
+    <!-- ============ 战略趋势（L1 上位观察层） ============ -->
+    <section class="panel" id="trend">
+      <h2>🧭 战略趋势（高一上位观察层）</h2>
+      <p class="lead">这一层不预测未来，只做一件事：帮你看清哪些变化值得盯，以及哪些选择在「基准 / 加速 / 缓和」三种未来下都不亏。</p>
+
+      <div class="fold-bar" id="foldBar"></div>
+
+      <div id="trendPosition"></div>
+
+      <h3>🕰️ 为什么说“这十年会明显变化”：三条时钟</h3>
+      <p class="lead">不是某个变量变得很大，而是<b>变量之间的速度差</b>——三条时钟不同步，才产生“入学时的热门 ≠ 毕业时的需求”。</p>
+      <div id="clockDiagram"></div>
+
+      <h3>📡 五个趋势维度（含确定性等级）</h3>
+      <div id="trendDims"></div>
+
+      <h3>⛓️ 政策 → 能力：四步解释链</h3>
+      <p class="lead">看到“政策支持某产业”，不要直接跳到“去学某个专业”。中间隔着四步，每一步都会打折。</p>
+      <div id="policyChain"></div>
+
+      <h3>📊 趋势数据表（每条都标了年份 · 来源 · 口径）</h3>
+      <div id="trendDataUI"></div>
+
+      <h3>📈 趋势图表（看图 30 秒，比读表快）</h3>
+      <p class="lead">三张图分别对应上文的三条时钟：人口、人数拐点、任务结构位移。每张图下面都写了<b>它说明什么</b>，以及<b>不要过度解读</b>什么。</p>
+      <div id="trendCharts"></div>
+
+      <h3>⚖️ 这些趋势落到我身上，具体是什么样</h3>
+      <p class="lead">知道“发生了什么”还不够，要能回答“<b>通过什么渠道作用到我</b>”。同一张图往往同时有对你不利和对你有利的渠道——判断依据不是“趋势好坏”，而是“机制是否作用在我身上”。</p>
+      <div id="impactTimeline"></div>
+
+      <h3>🔍 关键推论（每条都带“什么情况下不成立”）</h3>
+      <div id="trendInference"></div>
+
+      <h3>🎬 三种未来：情景压力测试</h3>
+      <p class="lead">情景不是预测，而是用来检验你的候选方向是否稳健。先看三种情景，再对下面的「稳健选择」。</p>
+      <div id="scenarioCards"></div>
+
+      <h3>🛡️ 三情景都成立的稳健选择（本层最重要的产出）</h3>
+      <div id="robustChoices"></div>
+
+      <h3>🧮 长期适应能力结构检查器</h3>
+      <p class="lead">给一个候选专业方向打分（0—5 分），加权得出 0—100 的“能力准备度”。<b>评估的是你为这个方向准备的能力结构，不是给专业打分，也不是专业排名。</b></p>
+      <div id="resilienceTool"></div>
+
+      <h3>🧪 方向反事实测试器</h3>
+      <p class="lead">如果我对未来的假设其实错了，我还愿意走这条路吗？<b>能在坏消息下仍然站得住的选择，才是稳健选择。</b></p>
+      <div id="counterfactual"></div>
+
+      <h3>🚀 战略级行动项（无电子产品也能执行）</h3>
+      <div id="trendActions"></div>
+
+      <h3>🔗 趋势 → 个人行动映射表</h3>
+      <p class="lead">看趋势的最后一步，永远是改行动——否则就只是“知道了”。</p>
+      <div id="actionMap"></div>
+
+      <h3>📝 趋势观察笔记（本地保存）</h3>
+      <div id="trendNotes"></div>
+
+      <h3>🔄 趋势验证日志（每学期一次，检验自己当初的判断）</h3>
+      <div id="verifyLog"></div>
+
+      <h3>🚫 这一层不会说什么（禁区清单）</h3>
+      <div id="trendForbidden"></div>
+
+      <div id="trendNote"></div>
+    </section>
+
+    <!-- ============ 选科决策 ============ -->
+    <section class="panel" id="select" data-page-node-id="ZLXb3RrsKLewju0CjwnFil">
+      <h2 data-page-node-id="UEHcH17jxiPHUCAbcZAWF6">🎯 选科决策（高一）</h2>
+      <p class="lead" data-page-node-id="P3OwcboXFf6DbJXzIv2GzB">广东 "3+1+2"：语数英 + 物理/历史二选一 + 政地化生四选二。选科决定未来能报哪些专业。</p>
+
+      <div class="select-rule" id="selectRule" data-page-node-id="0767KBds88gLW0thDbxCb1"></div>
+      <div class="criteria" id="criteria" data-page-node-id="ewpDDKH7GjHCbqtXEg0T6R"></div>
+
+      <h3>⚖️ 先分清两件事：选科要求 ≠ 招生计划</h3>
+      <p class="lead">这是选科里最容易搞混的一对概念。<b>选科要求</b>回答“我能不能报”（省教育厅发布，多年不变）；<b>招生计划</b>回答“今年招多少人”（省考试院每年发布）。两者是不同的文件、不同的年份、不同的作用。</p>
+      <div id="tripleFilter"></div>
+
+      <h3>📋 选科要求（2027 版，适用你这一届）</h3>
+      <div id="subjectReq"></div>
+
+      <h3>📊 招生计划：物理 vs 历史的结构差</h3>
+      <p class="lead">本科计划的 <b>77%</b> 投给物理类、<b>23%</b> 投给历史类；而考生人数是物理 58%、历史 42%。这条落差就是“选科结构”的真实含义。</p>
+      <div id="planVsExam"></div>
+
+      <h3>📈 招生计划 vs 考生人数（图）</h3>
+      <div id="planChart"></div>
+
+      <div class="selector-box" data-page-node-id="76DVx1FW11OlmM5HCaXT6Z">
+        <h3 data-page-node-id="AjiyrHCBTw5j7yB4DP4EbX">① 动手选一选，看组合风险</h3>
+        <div class="sel-group" data-page-node-id="J9SSvPNAAxMw7YHyPFjExT">
+          <span class="sel-label" data-page-node-id="vub6VpWRbsWTWxlPbww5zW">首选（1门）：</span>
+          <label class="pill" data-page-node-id="S1K9hpLqAg6bcKt3Ecs9nQ"><input type="radio" name="prefer" value="物理" data-page-node-id="wDSRNyyN1M6uVCv5csYRTS" /> 物理</label>
+          <label class="pill" data-page-node-id="NoynCuKUp1oxNv3fscywX9"><input type="radio" name="prefer" value="历史" data-page-node-id="n0KGKFZTLHGkXT6aI7U0Pj" /> 历史</label>
+        </div>
+        <div class="sel-group" data-page-node-id="C0xV3gbf1muSRx0izrIxPw">
+          <span class="sel-label" data-page-node-id="cuScODMtqzNxIqni1tLOL4">再选（2门）：</span>
+          <label class="pill" data-page-node-id="Jh4upe7TOk3IUSrQhYsgvk"><input type="checkbox" name="reelect" value="化学" data-page-node-id="zV3Ruafw6zllt76cBjbbM3" /> 化学</label>
+          <label class="pill" data-page-node-id="GHjt1wyCoHDVIIH8MYJoyj"><input type="checkbox" name="reelect" value="生物" data-page-node-id="askEO5Cn1yoywbXk8EMwoY" /> 生物</label>
+          <label class="pill" data-page-node-id="wCXYbJxAGxRHcqiRIEGGp5"><input type="checkbox" name="reelect" value="政治" data-page-node-id="82yX1IRx8U5WVQA99mz1nr" /> 政治</label>
+          <label class="pill" data-page-node-id="BxUqaZLgEna3vXh6GfbGwW"><input type="checkbox" name="reelect" value="地理" data-page-node-id="d3klOOxVsqfZjEMlEp7UZm" /> 地理</label>
+        </div>
+        <div class="sel-result" id="selResult" data-page-node-id="a2ZdkLhLZw3EoFbdDmyLeq"></div>
+      </div>
+
+      <h3 data-page-node-id="mdrai9rICbKHTuTl911Slu">② 常见组合对照</h3>
+      <div class="combos" id="combos" data-page-node-id="uGU8ZOW4HfdzH68IMMTd5s"></div>
+
+      <h3 data-page-node-id="xsCZiwulyiNuIw5d3wIa6i">③ 选科四大误区</h3>
+      <div class="myths" id="myths" data-page-node-id="BNPWlaMKkuYZDdKK7ugpvm"></div>
+
+      <h3>④ 组合 → 专业池（选科要求 / 广东开设高校 / 近 3 年位次）</h3>
+      <div id="majorPool"></div>
+    </section>
+
+    <!-- ============ 未来支线 ============ -->
+    <section class="panel" id="branches" data-page-node-id="XKiYjXWTrYCrmJzjmmoylo">
+      <h2 data-page-node-id="23R2mGkVFBwwRiHpGIiyUg">🌐 结合未来工作环境的 3 条支线</h2>
+      <p class="lead" data-page-node-id="n6MSZFbVoA0AWcokRDHMKG">未来就业环境不同，高一高二的行动重点也不同。先看自己大概率走哪条，再对号入座。</p>
+      <div class="branch-cards" id="branchCards" data-page-node-id="wCBekAy8BxNv6v5yb3e24T"></div>
+    </section>
+
+    <!-- ============ 升学路径 ============ -->
+    <section class="panel" id="paths">
+      <h2>🧭 升学路径（5 条完整定义）</h2>
+      <p class="lead">主路径永远是普通高考，其余路径都是补充。它们应当作"路径提醒"，而不是"捷径宣传"。</p>
+      <div id="pathMatch"></div>
+      <div id="pathList"></div>
+      <h3>🎲 信息博弈视角：特殊路径的胜率从哪来</h3>
+      <p class="lead">强基 / 综评 / 专项 / 志愿填报都是“信息博弈”：时间窗固定、信息源公开。博弈是能力，运气也是能力——靠信息的把握与更新提升胜率。</p>
+      <div id="pathGame"></div>
+    </section>
+
+    <!-- ============ 高中三年 ============ -->
+    <section class="panel" id="grades" data-page-node-id="aXMQ9rMWNhaKP1pR6kF6Fv">
+      <h2 data-page-node-id="fQnqsU1FT4cGgw2uhZWIWF">📅 高中三年（细化 + 量化）</h2>
+      <p class="lead" data-page-node-id="GiRPTqm74DJ3YrJsCtkP5N">六个学期逐个给到 主题 · 量化目标 · 动作 · 里程碑 · 检查 · 避坑。排名/时长为粗估，按其学校层次微调。</p>
+
+      <h3>🧮 我的三年计划（选目标层次 → 自动填位次与阶段目标）</h3>
+      <div id="threeYearPlan"></div>
+
+      <div class="grade-cards" id="gradeCards" data-page-node-id="CTcJmq3rDYV514eoUqclB8"></div>
+
+      <h3>🧮 学期量化目标速览</h3>
+      <div id="gradeQuant"></div>
+
+      <h3>🗓️ 高一 / 高二 / 高三 月度节奏</h3>
+      <div id="hsMonths"></div>
+
+      <h3>📌 广东关键时间节点</h3>
+      <div id="examTimeline"></div>
+
+      <h3>🏫 学校层次换算（同一省位次 → 不同学校年级排名）</h3>
+      <div id="schoolLevels"></div>
+
+      <h3>🎯 高三位次管理节奏</h3>
+      <div id="hs3Rank"></div>
+
+      <h3>🧭 目标位次换算（粗估）</h3>
+      <div id="rankStrategy"></div>
+
+      <h3>⏱️ 各科时间/精力分配</h3>
+      <div id="subjectTime"></div>
+
+      <h3>🌿 阶段任务树（目标 → 动作 → 检查）</h3>
+      <div id="taskTree"></div>
+
+      <h3>🧩 我的计划：从三年目标拆到本周</h3>
+      <div id="planBreakdown"></div>
+    </section>
+
+    <!-- ============ 我的目标 ============ -->
+    <section class="panel" id="target">
+      <h2>🎯 我的目标：专业池 + 高校池</h2>
+      <p class="lead">不是"我想上某 985 → 随便选专业"，而是"兴趣 → 专业 → 院校专业组 → 选科要求 → 位次 → 冲稳保"。</p>
+      <div id="targetContent"></div>
+
+      <h3>🏫 目标院校核对表（把三层筛选落到学校）</h3>
+      <p class="lead">每所目标院校都要回答 4 件事：选科要求 → 在粤投放 → 近 3 年位次 → 计划变动。高一只需要解决第一件，其余逐年核对。勾选院校即可生成核对清单。</p>
+      <div id="schoolCheck"></div>
+
+      <h3>🗄️ 高校库（L3 院校级 · 带更新标注）</h3>
+      <p class="lead">院校级全景：只做“学校”这一层，不拆到专业组；每行数据带口径标注，变化通过“变化记录”逐次累积，形成每所学校的动态变化轨迹。</p>
+      <div id="schoolDb"></div>
+
+      <h3>🧮 六科目标拆解（总分 750）</h3>
+      <div id="scoreModel"></div>
+      <h3>🧬 学生画像标签</h3>
+      <div id="profileTags"></div>
+    </section>
+
+    <!-- ============ 我的排名 ============ -->
+    <section class="panel" id="rank">
+      <h2>📈 我的排名：排名/位次趋势</h2>
+      <p class="lead">看趋势，不看单次。位次数字越小越好；差距 = 当前位次 − 目标位次。</p>
+      <div id="rankContent"></div>
+      <div id="rankProfile"></div>
+      <div class="calc-box" id="rankCalc"></div>
+      <h3>🗺️ 位次 → 院校档位（粗估锚点）</h3>
+      <div id="rankTiers"></div>
+      <h3>🎓 代表性高校广东录取位次（粗估）</h3>
+      <div id="schoolRanks"></div>
+    </section>
+
+    <!-- ============ 检验复盘 ============ -->
+    <section class="panel" id="check" data-page-node-id="bJw0eiaOTd2by9RIazRbPF">
+      <h2 data-page-node-id="Spez5fT1bjL3Xl203vWduf">✅ 怎样检验 + 每两周复盘</h2>
+      <p class="lead" data-page-node-id="SjacpEJP7z7EbQJTTHwciZ">把"我考差了"变成可量化的指标。下面几个工具的数据都保存在本机浏览器，关掉也不丢。</p>
+
+      <h3>🗂️ 考试节点模板（月考 / 期中 / 期末）</h3>
+      <div id="examCheck"></div>
+
+      <div class="check-grid" data-page-node-id="Q7yh0pJdgtGRGlWqbUC43E">
+        <div class="check-card" data-page-node-id="V9Z8C8AgRdq4YADQ2eLtkm">
+          <h3 data-page-node-id="svGoUKi6coLCZtGqEjV7Wn">📊 月度自检表</h3>
+          <p class="muted" data-page-node-id="XcJ0boNyrHe1NoMSB9MSzc">每月填一次，看趋势而非单次数字。</p>
+          <div id="monthlyTable" data-page-node-id="5ziMck0e99yIh5FD8B22TT"></div>
+          <button class="btn" id="saveMonthly" data-page-node-id="nTsobYY6Dn05JDxUgqEY6U">保存本月数据</button>
+          <p class="saved-hint" id="monthlyHint" data-page-node-id="s6fE5yI3ZTqfx4BceIVrr7"></p>
+        </div>
+
+        <div class="check-card" data-page-node-id="k2I1LQyvPXNjzjQfbMtVez">
+          <h3 data-page-node-id="9HIILTw7JvbpGhYPboJ7Mx">🔍 丢分分析表</h3>
+          <p class="muted" data-page-node-id="ktIu7oKpS97HIabtFJ29qE">每次考试记一张纸：题号/丢分/原因/是否可避免/下一步，并按 A–E 分类。</p>
+          <div id="lossForm" data-page-node-id="eVLhXETnAieyvyCgjOh5I7"></div>
+          <div id="lossList" data-page-node-id="XGfyxf0D9sGCc4co0cBpJc"></div>
+        </div>
+      </div>
+
+      <div class="twoweek-box" data-page-node-id="FEvz8mYgj7txio54EzqK9O">
+        <h3 data-page-node-id="9WcU63WDWOHK95Ix73xT7V">🔁 每两周复盘卡（可打印）</h3>
+        <p class="muted" data-page-node-id="PEVi4GatJ7uGLA3qB0lnTQ">一张A4纸，20–30分钟，固定回答 5 个问题。复盘是修改行动，不是写总结。</p>
+        <div id="twoweekCard" data-page-node-id="uWBAqTYjMlTosaSeBToHHl"></div>
+        <button class="btn print-btn" id="printTwoweek" data-page-node-id="MkMgyXPuB6VOa87Es25wpk">🖨️ 打印复盘卡</button>
+      </div>
+    </section>
+
+    <!-- ============ 无电子产品 ============ -->
+    <section class="panel" id="paper" data-page-node-id="FHvABE3warTe4ZcKCAwZgU">
+      <h2 data-page-node-id="GiJDvCkug7chccSisHgBh0">📒 学校没有电子产品，怎么落地？</h2>
+      <p class="lead" data-page-node-id="72T3Yqqx7wuPGLEvlTaj5P">核心原则：<b data-page-node-id="XAJIQ2uHLzRFKNMjyzjzeA">在学校完成输入和训练，回家完成汇总和规划。</b>纸质系统可承担 80% 以上的日常规划。</p>
+      <div id="paperContent" data-page-node-id="3lFSZPFBw6vSMwkTTv64M3"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" data-page-node-id="l4zG4kMHTZC4wgF5OcHb2U">
+    <div class="wrap" data-page-node-id="lCVRGqCLjaAFMo00DFWddF">
+      <p data-page-node-id="3dUPkTgLZLhxy3O1ejoTSa">本工具内容由 ChatGPT（通过本地 chatgpt-openai-bridge）规划并结构化整理，仅供广东高一学生与家长参考。</p>
+      <p class="muted" data-page-node-id="S3semZdCPbyvca78mEJjpt">数据口径以官方当年公布为准 · 强基/综评/专项等应作"路径提醒"而非"捷径宣传"。</p>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/chart.umd.min.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
