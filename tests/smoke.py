@@ -294,13 +294,13 @@ with sync_playwright() as p:
         "return t.includes('院校级（L3）')&&t.includes('变化记录')&&t.includes('宁缺毋滥');}"))
     step("高校库含口径标注列", lambda: pg.evaluate(
         "()=>document.querySelector('#schoolDb').innerText.includes('口径标注')"))
-    step("高校库变化记录 = 3 条院校", lambda: pg.evaluate(
-        "()=>document.querySelectorAll('#schoolDb .db-ch').length===3"))
+    step("高校库变化记录 = 5 条院校", lambda: pg.evaluate(
+        "()=>document.querySelectorAll('#schoolDb .db-ch').length===5"))
     step("高校库无位次行显示待收录", lambda: pg.evaluate(
         "()=>document.querySelector('#schoolDb').innerText.includes('待收录')"))
     step("高校库显示最近核验日期", lambda: pg.evaluate(
         "()=>{const t=document.querySelector('#schoolDb').innerText;"
-        "return t.includes('最近核验')&&t.includes('2026-09-14');}"))
+        "return t.includes('最近核验')&&t.includes('2026-09-15');}"))
     step("高校库含'不代表该校没有发生变化'", lambda: pg.evaluate(
         "()=>document.querySelector('#schoolDb').innerText.includes('不代表该校没有发生变化')"))
     step("高校库 asOf 区分数据日期与核验日期", lambda: pg.evaluate(
